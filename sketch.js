@@ -18,15 +18,15 @@ function draw() {
   car.velocityX = speed;
  
   if(deformation > 180){
-    car = color(255,0,0);
+    car.shapeColor = "red";
   }
 
-  if(deformation < 180){
-    car = color(0,255,0);
+  if(deformation < 100){
+    car.shapeColor = "green";
   }
 
   if(deformation = rand){
-    car = color(230,230,0);
+    car.shapeColor = "yellow";
   }
   
   drawSprites();
