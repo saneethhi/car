@@ -16,7 +16,8 @@ function setup() {
 function draw() {
   background(255,255,255);  
   car.velocityX = speed;
- 
+  car.collide(wall);
+  
   if(deformation > 180){
     car.shapeColor = "red";
   }
